@@ -79,8 +79,8 @@ const MainMenu = () => {
         />
       ))}
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-jungle-green/70 to-jungle-green/90 z-0"></div>
+      {/* Dark overlay - reducing opacity to make background image more visible */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 z-0"></div>
       
       {/* T-Rex silhouette */}
       <div className="absolute right-20 bottom-10 h-40 w-56 opacity-30 z-10">
