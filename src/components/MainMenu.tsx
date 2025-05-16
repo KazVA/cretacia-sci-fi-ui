@@ -61,7 +61,7 @@ const MainMenu = () => {
       ref={containerRef}
       className="relative w-full min-h-screen bg-jungle-green overflow-hidden flex flex-col items-center justify-center"
       style={{ 
-        backgroundImage: `url('/jungle-bg.jpg')`,
+        backgroundImage: `url('/lovable-uploads/04dcea0c-65c6-4052-a6c2-05befcf1277c.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
