@@ -94,7 +94,7 @@ const MainMenu = () => {
         </h1>
 
         {/* Menu buttons - moved to bottom left and made smaller */}
-        <div className="absolute bottom-10 left-10 flex flex-col items-start space-y-2 z-20">
+        <div className="fixed bottom-10 left-10 flex flex-col items-start space-y-2 z-20">
           {menuItems.map((item, index) => (
             <MenuItem 
               key={index} 
@@ -105,7 +105,7 @@ const MainMenu = () => {
           ))}
         </div>
 
-        <div className="absolute bottom-4 left-10 font-exo text-xs text-bone-white/60 flex items-center gap-2 z-20">
+        <div className="fixed bottom-4 left-10 font-exo text-xs text-bone-white/60 flex items-center gap-2 z-20">
           <span>Press</span>
           <ArrowRight size={14} className="text-bio-cyan" />
           <span>to select</span>
