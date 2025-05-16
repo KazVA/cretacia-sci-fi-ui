@@ -1,7 +1,7 @@
+
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -39,4 +39,21 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* T-Rex Rumble Animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+.shake {
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* Placeholder styles for jungle background */
+[style*="jungle-bg.jpg"] {
+  background-color: #1A3C34 !important;
+  background-image: linear-gradient(to bottom, rgba(26, 60, 52, 0.9), rgba(28, 37, 38, 0.9)) !important;
 }
