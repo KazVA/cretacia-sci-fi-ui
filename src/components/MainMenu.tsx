@@ -88,12 +88,13 @@ const MainMenu = () => {
       </div>
 
       {/* Menu content */}
-      <div className="relative z-10 flex flex-col items-center justify-center space-y-16 px-4">
+      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
         <h1 className="font-orbitron font-bold text-5xl md:text-7xl lg:text-8xl text-bone-white title-glow animate-pulse-glow">
           <span className="text-bio-cyan">CRE</span>TACIA
         </h1>
 
-        <div className="flex flex-col items-center space-y-4 mb-10">
+        {/* Menu buttons - moved to bottom left and made smaller */}
+        <div className="absolute bottom-10 left-10 flex flex-col items-start space-y-2 z-20">
           {menuItems.map((item, index) => (
             <MenuItem 
               key={index} 
@@ -104,7 +105,7 @@ const MainMenu = () => {
           ))}
         </div>
 
-        <div className="font-exo text-xs text-bone-white/60 mt-8 flex items-center gap-2">
+        <div className="absolute bottom-4 left-10 font-exo text-xs text-bone-white/60 flex items-center gap-2 z-20">
           <span>Press</span>
           <ArrowRight size={14} className="text-bio-cyan" />
           <span>to select</span>

@@ -10,7 +10,7 @@ interface MenuItemProps {
 const MenuItem: React.FC<MenuItemProps> = ({ label, onClick, delay }) => {
   return (
     <button 
-      className="menu-option font-exo text-lg md:text-2xl text-bone-white/90 tracking-wider"
+      className="menu-option font-exo text-sm md:text-base text-bone-white/90 tracking-wider"
       onClick={onClick}
       style={{
         animationDelay: `${delay}s`,
