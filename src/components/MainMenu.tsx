@@ -1,11 +1,13 @@
 
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import MenuItem from './MenuItem';
 import { ArrowRight } from 'lucide-react';
 
 const MainMenu = () => {
   const [spores, setSpores] = useState<{ id: number; left: string; top: string; animationDuration: string }[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Generate spores for the bioluminescent effect
@@ -51,7 +53,7 @@ const MainMenu = () => {
   const menuItems = [
     { label: 'New Game', action: () => console.log('New Game clicked') },
     { label: 'Load Game', action: () => console.log('Load Game clicked') },
-    { label: 'Settings', action: () => console.log('Settings clicked') },
+    { label: 'Settings', action: () => navigate('/settings') },
     { label: 'Credits', action: () => console.log('Credits clicked') },
     { label: 'Exit', action: () => console.log('Exit clicked') },
   ];

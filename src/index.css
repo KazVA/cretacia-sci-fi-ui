@@ -83,3 +83,59 @@
   animation: float 10s infinite ease-in-out;
   opacity: 0.8;
 }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-15px) translateX(5px); }
+  50% { transform: translateY(-25px) translateX(-5px); }
+  75% { transform: translateY(-10px) translateX(10px); }
+}
+
+/* Custom styles for Settings UI components */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(28, 37, 38, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 196, 180, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 196, 180, 0.8);
+}
+
+/* Tabs styling */
+[role="tablist"] {
+  @apply border-b border-bio-cyan/30 overflow-x-auto;
+}
+
+[role="tab"][data-state="active"] {
+  @apply border-b-2 border-amber-orange relative;
+}
+
+[role="tab"][data-state="active"]::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-[2px] bg-bio-cyan;
+  box-shadow: 0 0 8px 1px rgba(0, 196, 180, 0.8);
+}
+
+/* Settings UI animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+/* Slider custom styling */
+.slider-glow:hover {
+  box-shadow: 0 0 8px 1px rgba(0, 196, 180, 0.8);
+}
