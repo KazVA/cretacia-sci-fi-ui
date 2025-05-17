@@ -139,27 +139,3 @@
 .slider-glow:hover {
   box-shadow: 0 0 8px 1px rgba(0, 196, 180, 0.8);
 }
-
-/* Dark strip hover effect for settings items - full coverage */
-.settings-item {
-  @apply relative overflow-hidden transition-all duration-200;
-}
-
-.settings-item::before {
-  content: '';
-  @apply absolute inset-0 bg-obsidian-black/70 -left-full;
-  transition: left 0.2s ease-out, opacity 0.2s ease-out;
-  opacity: 0;
-  z-index: -1; /* Ensure it's behind the content */
-}
-
-.settings-item:hover::before {
-  @apply left-0;
-  opacity: 1;
-}
-
-/* Settings item hover effect applied to specific components */
-.flex.items-center.justify-between,
-.space-y-2 {
-  @apply settings-item;
-}
