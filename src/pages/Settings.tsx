@@ -78,7 +78,7 @@ const Settings = () => {
             <TabsContent value="gameplay" className="space-y-6 max-h-[60vh] overflow-y-auto pr-2">
               <div className="space-y-8">
                 {/* Difficulty */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Difficulty</label>
                   <ToggleGroup type="single" defaultValue="normal" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="easy" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Easy</ToggleGroupItem>
@@ -89,7 +89,7 @@ const Settings = () => {
                 </div>
                 
                 {/* HUD Visibility */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">HUD Visibility</label>
                   <ToggleGroup type="single" defaultValue="on" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="on" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">On</ToggleGroupItem>
@@ -99,7 +99,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Tooltips */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Tooltips</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -109,7 +109,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Autosave Frequency */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Autosave Frequency</label>
                   <ToggleGroup type="single" defaultValue="10" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="5" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">5 mins</ToggleGroupItem>
@@ -120,7 +120,7 @@ const Settings = () => {
                 </div>
                 
                 {/* More gameplay options would go here */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Sprint Toggle</label>
                   <ToggleGroup type="single" defaultValue="hold" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="hold" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Hold</ToggleGroupItem>
@@ -128,7 +128,7 @@ const Settings = () => {
                   </ToggleGroup>
                 </div>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Crouch Toggle</label>
                   <ToggleGroup type="single" defaultValue="toggle" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="hold" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Hold</ToggleGroupItem>
@@ -136,7 +136,7 @@ const Settings = () => {
                   </ToggleGroup>
                 </div>
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Fear Effect Intensity</label>
                   <ToggleGroup type="single" defaultValue="medium" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="low" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Low</ToggleGroupItem>
@@ -152,7 +152,7 @@ const Settings = () => {
             <TabsContent value="graphics" className="space-y-6 max-h-[60vh] overflow-y-auto pr-2">
               <div className="space-y-8">
                 {/* Resolution */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Resolution</label>
                   <ToggleGroup type="single" defaultValue="1920x1080" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="1280x720" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">1280x720</ToggleGroupItem>
@@ -163,7 +163,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Display Mode */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Display Mode</label>
                   <ToggleGroup type="single" defaultValue="fullscreen" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="fullscreen" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Fullscreen</ToggleGroupItem>
@@ -173,7 +173,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Graphics Quality */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Graphics Quality</label>
                   <ToggleGroup type="single" defaultValue="high" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="low" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Low</ToggleGroupItem>
@@ -185,7 +185,7 @@ const Settings = () => {
                 </div>
                 
                 {/* FOV Slider */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">Field of View</label>
                     <span className="font-exo text-bone-white/70 text-sm">90°</span>
@@ -198,7 +198,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Motion Blur */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Motion Blur</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -208,7 +208,7 @@ const Settings = () => {
                 </div>
                 
                 {/* V-Sync */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">V-Sync</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -223,7 +223,7 @@ const Settings = () => {
             <TabsContent value="audio" className="space-y-6 max-h-[60vh] overflow-y-auto pr-2">
               <div className="space-y-8">
                 {/* Master Volume */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">Master Volume</label>
                     <span className="font-exo text-bone-white/70 text-sm">80%</span>
@@ -236,7 +236,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Music Volume */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">Music Volume</label>
                     <span className="font-exo text-bone-white/70 text-sm">70%</span>
@@ -249,7 +249,7 @@ const Settings = () => {
                 </div>
                 
                 {/* SFX Volume */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">SFX Volume</label>
                     <span className="font-exo text-bone-white/70 text-sm">90%</span>
@@ -262,7 +262,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Ambient Volume */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">Ambient Volume</label>
                     <span className="font-exo text-bone-white/70 text-sm">85%</span>
@@ -275,7 +275,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Predator Vocalization Volume */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">Predator Vocalization</label>
                     <span className="font-exo text-bone-white/70 text-sm">100%</span>
@@ -288,7 +288,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Audio Output */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Audio Output</label>
                   <ToggleGroup type="single" defaultValue="headphones" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="stereo" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Stereo</ToggleGroupItem>
@@ -303,7 +303,7 @@ const Settings = () => {
             <TabsContent value="controls" className="space-y-6 max-h-[60vh] overflow-y-auto pr-2">
               <div className="space-y-8">
                 {/* Mouse Sensitivity */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">Mouse Sensitivity</label>
                     <span className="font-exo text-bone-white/70 text-sm">5.5</span>
@@ -316,7 +316,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Invert Y-Axis */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Invert Y-Axis</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -326,7 +326,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Controller Support */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Controller Support</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -340,32 +340,32 @@ const Settings = () => {
                   <h3 className="font-orbitron text-bio-cyan text-xl">Key Bindings</h3>
                   
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md">
+                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md settings-item">
                       <span className="font-exo text-bone-white/90">Move Forward</span>
                       <button className="px-4 py-1 bg-jungle-green border border-bio-cyan/50 text-bio-cyan font-exo hover:bg-bio-cyan hover:text-obsidian-black transition-colors">W</button>
                     </div>
                     
-                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md">
+                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md settings-item">
                       <span className="font-exo text-bone-white/90">Move Backward</span>
                       <button className="px-4 py-1 bg-jungle-green border border-bio-cyan/50 text-bio-cyan font-exo hover:bg-bio-cyan hover:text-obsidian-black transition-colors">S</button>
                     </div>
                     
-                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md">
+                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md settings-item">
                       <span className="font-exo text-bone-white/90">Move Left</span>
                       <button className="px-4 py-1 bg-jungle-green border border-bio-cyan/50 text-bio-cyan font-exo hover:bg-bio-cyan hover:text-obsidian-black transition-colors">A</button>
                     </div>
                     
-                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md">
+                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md settings-item">
                       <span className="font-exo text-bone-white/90">Move Right</span>
                       <button className="px-4 py-1 bg-jungle-green border border-bio-cyan/50 text-bio-cyan font-exo hover:bg-bio-cyan hover:text-obsidian-black transition-colors">D</button>
                     </div>
                     
-                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md">
+                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md settings-item">
                       <span className="font-exo text-bone-white/90">Jump</span>
                       <button className="px-4 py-1 bg-jungle-green border border-bio-cyan/50 text-bio-cyan font-exo hover:bg-bio-cyan hover:text-obsidian-black transition-colors">SPACE</button>
                     </div>
                     
-                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md">
+                    <div className="flex items-center justify-between bg-obsidian-black/50 p-3 rounded-md settings-item">
                       <span className="font-exo text-bone-white/90">Sprint</span>
                       <button className="px-4 py-1 bg-jungle-green border border-bio-cyan/50 text-bio-cyan font-exo hover:bg-bio-cyan hover:text-obsidian-black transition-colors">SHIFT</button>
                     </div>
@@ -378,7 +378,7 @@ const Settings = () => {
             <TabsContent value="accessibility" className="space-y-6 max-h-[60vh] overflow-y-auto pr-2">
               <div className="space-y-8">
                 {/* Colorblind Mode */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Colorblind Mode</label>
                   <ToggleGroup type="single" defaultValue="off" className="bg-obsidian-black/50 p-1 rounded-md">
                     <ToggleGroupItem value="off" className="font-exo text-sm data-[state=on]:bg-bio-cyan data-[state=on]:text-obsidian-black">Off</ToggleGroupItem>
@@ -389,7 +389,7 @@ const Settings = () => {
                 </div>
                 
                 {/* High Contrast Mode */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">High Contrast Mode</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -399,7 +399,7 @@ const Settings = () => {
                 </div>
                 
                 {/* UI Scale */}
-                <div className="space-y-2">
+                <div className="space-y-2 settings-item">
                   <div className="flex items-center justify-between">
                     <label className="font-exo text-bone-white/90 text-xl">UI Scale</label>
                     <span className="font-exo text-bone-white/70 text-sm">100%</span>
@@ -412,7 +412,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Motion Sickness Reduction */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Motion Sickness Reduction</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -422,7 +422,7 @@ const Settings = () => {
                 </div>
                 
                 {/* Dyslexia-Friendly Font */}
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between settings-item">
                   <label className="font-exo text-bone-white/90 text-xl">Dyslexia-Friendly Font</label>
                   <div className="flex items-center gap-3">
                     <span className="text-bone-white/70 font-exo">Off</span>
@@ -470,3 +470,4 @@ const Settings = () => {
 };
 
 export default Settings;
+
