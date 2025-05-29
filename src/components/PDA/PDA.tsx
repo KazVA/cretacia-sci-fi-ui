@@ -7,7 +7,7 @@ import { LabDataTab } from './tabs/LabDataTab';
 import { CommsTab } from './tabs/CommsTab';
 import { InventoryTab } from './tabs/InventoryTab';
 import { ActivationParticles } from './ActivationParticles';
-import { Map, Dinosaurs, LabData, Comms, Inventory } from 'lucide-react';
+import { Map, Beef, FlaskConical, Radio, Package } from 'lucide-react';
 
 type TabType = 'map' | 'dinosaurs' | 'lab-data' | 'comms' | 'inventory';
 
@@ -19,10 +19,10 @@ interface Tab {
 
 const tabs: Tab[] = [
   { id: 'map', name: 'Map', icon: Map },
-  { id: 'dinosaurs', name: 'Dinosaurs', icon: Dinosaurs },
-  { id: 'lab-data', name: 'Lab Data', icon: LabData },
-  { id: 'comms', name: 'Comms', icon: Comms },
-  { id: 'inventory', name: 'Inventory', icon: Inventory },
+  { id: 'dinosaurs', name: 'Dinosaurs', icon: Beef },
+  { id: 'lab-data', name: 'Lab Data', icon: FlaskConical },
+  { id: 'comms', name: 'Comms', icon: Radio },
+  { id: 'inventory', name: 'Inventory', icon: Package },
 ];
 
 export const PDA = () => {
